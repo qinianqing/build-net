@@ -1,0 +1,19 @@
+ //顶部蓝色line
+    var lastLeft=$(".list-inline li").eq(0).position().left;
+    $(".line").stop().animate({"left":lastLeft});
+    $(".list-inline li").mouseenter(function () {
+
+        console.log($(this).position().left);
+
+        $(".line").stop().animate({"left":$(this).position().left});
+
+    });
+    $(".list-inline li").mouseleave(function () {
+        $(".line").stop().animate({"left":lastLeft});
+    });
+
+    $(".list-inline li").click(function () {
+        lastLeft=$(this).position().left;
+    });
+
+    //顶部蓝色line结束

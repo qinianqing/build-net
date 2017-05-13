@@ -1,0 +1,48 @@
+/* 0411 */
+.indexFloatCon { position: fixed; display: block; right: 0; bottom: 0; width: 50px; z-index: 9999; font-family: "microsoft yahei";}
+.indexFloatCon li { position: relative; margin-bottom: 1px; height: 50px; }
+.indexFloatCon li:first-child { height: 45px; overflow: hidden; }
+.indexFloatCon li.wenti > a { background: #35373a url(../images/tit12.png) left center no-repeat; }
+.indexFloatCon li.wenti:hover > a { background-color: #d51737; }
+.indexFloatCon li:hover a { -webkit-opacity: 1; opacity: 1; filter: alpha(opacity=100); }
+.indexFloatCon li.mb4 { margin-bottom: 4px; }
+.indexFloatCon li a { display: block; height: 50px; -webkit-opacity: 0.5; opacity: 0.5; filter: alpha(opacity=50); }
+.indexFloatCon li a.indexGoTop { position: absolute; width: 100%; left: 0; top: 46px; background: url(../images/top.png) no-repeat;}
+.indexFloatCon li a.on { -webkit-opacity: 1; opacity: 1; filter: alpha(opacity=100); }
+.indexFloatCon li a.online, .indexFloatCon li a.bf1, .indexFloatCon li a.bf2, .indexFloatCon li a.bf3, .indexFloatCon li a.bf4, .indexFloatCon li a.bf5, .indexFloatCon li a.bf6,.indexFloatCon li a.bf7,.indexFloatCon li a.bf8,.indexFloatCon li a.nextPage, .indexFloatCon li a.goList, .indexFloatCon li a.prevPage { position: absolute; top: 0; left: 0; width: 140px; background: #35373a url(../images/icon72.png) left center no-repeat; font-size: 18px; color: #fff; line-height: 50px; text-indent: 50px; }
+.indexFloatCon li a.online:hover, .indexFloatCon li a.bf1:hover, .indexFloatCon li a.bf2:hover, .indexFloatCon li a.bf3:hover, .indexFloatCon li a.bf4:hover, .indexFloatCon li a.bf5:hover, .indexFloatCon li a.bf6:hover,.indexFloatCon li a.bf7:hover,.indexFloatCon li a.bf8:hover,.indexFloatCon li a.nextPage:hover, .indexFloatCon li a.goList:hover, .indexFloatCon li a.prevPage:hover { background-color: #d51737; }
+.indexFloatCon li a.erweima { background: #35373a url(../images/tit11.png) left center no-repeat; }
+.indexFloatCon li a.erweima:hover { background-color: #d51737; }
+.indexFloatCon li a.bf1 { background: #35373a url(../images/tit13.png) left center no-repeat; }
+.indexFloatCon li a.bf1:hover, .indexFloatCon li a.bf1.on { background-color: #d51737; }
+.indexFloatCon li a.bf2 { background: #35373a url(../images/tit14.png) left center no-repeat; }
+.indexFloatCon li a.bf2:hover, .indexFloatCon li a.bf2.on { background-color: #1c8fb9; }
+.indexFloatCon li a.bf3 { background: #35373a url(../images/tit15.png) left center no-repeat; }
+.indexFloatCon li a.bf3:hover, .indexFloatCon li a.bf3.on { background-color: #1cb98b; }
+.indexFloatCon li a.bf4 { background: #35373a url(../images/tit16.png) left center no-repeat; }
+.indexFloatCon li a.bf4:hover, .indexFloatCon li a.bf4.on { background-color: #96b91c; }
+.indexFloatCon li a.bf5 { background: #35373a url(../images/tit17.png) left center no-repeat; }
+.indexFloatCon li a.bf5:hover, .indexFloatCon li a.bf5.on { background-color: #b9871c; }
+.indexFloatCon li a.bf6 { background: #35373a url(../images/tit18.png) left center no-repeat; }
+.indexFloatCon li a.bf6:hover, .indexFloatCon li a.bf6.on { background-color: #3e3e3e; }
+.indexFloatCon li a.bf7 { background: #35373a url(../images/tit18.png) left center no-repeat; }
+.indexFloatCon li a.bf7:hover, .indexFloatCon li a.bf7.on { background-color: cyan; }
+.indexFloatCon li a.bf8 { background: #35373a url(../images/tit18.png) left center no-repeat; }
+.indexFloatCon li a.bf8:hover, .indexFloatCon li a.bf8.on { background-color: #61c339; }
+.indexFloatCon li a.nextPage { background-image: url(../images/icon15.png); background-color: #35373a; }
+.indexFloatCon li a.nextPage:hover { background-color: #d51737; }
+.indexFloatCon li a.goList { background-image: url(../images/icon17.png); background-color: #35373a; }
+.indexFloatCon li a.goList:hover { background-color: #d51737; }
+.indexFloatCon li a.prevPage { background-image: url(../images/icon20.png); background-color: #35373a; }
+.indexFloatCon li a.prevPage:hover { background-color: #d51737; }
+.indexFloatCon li .ewmCon { position: absolute; display: none; padding: 20px 10px 10px; bottom: 0; right: 50px; width: 210px; background-color: #fff; border: 1px solid #dbdbdb; box-shadow: 0 0 5px #dbdbdb; }
+.indexFloatCon li .ewmCon .ewm { float: left; margin: 0 10px; width: 85px; text-align: center; }
+.indexFloatCon li .ewmCon .ewm img { display: block; width: 100%; }
+.indexFloatCon li .ewmCon .ewm p { color: #666; }
+.indexFloatCon li .wentiCon { position: absolute; display: none; right: 50px; bottom: -52px; padding: 20px; width: 240px; border: 1px solid #ddd; background-color: #fff; overflow: hidden; }
+.indexFloatCon li .wentiCon dt { height: 22px; line-height: 22px; font-size: 16px; border-left: 3px solid #d6203f; padding-left: 10px; margin-bottom: 10px; }
+.indexFloatCon li .wentiCon dt a { float: right; font-size: 14px; color: #999; height: auto; display: none; }
+.indexFloatCon li .wentiCon dt a:hover { color: #d6203f; }
+.indexFloatCon li .wentiCon dd a { font-size: 14px; line-height: 26px; color: #666; height: auto; }
+.indexFloatCon li .wentiCon dd a:hover { color: #d6203f; }
+.indexFloatCon li .wentiCon:hover dt a { display: block; }

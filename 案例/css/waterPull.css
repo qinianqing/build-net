@@ -1,0 +1,335 @@
+/*header start*/
+.header{
+    width: 100%;
+    position: fixed;
+    height: 74px;
+    color: #ccc;
+    z-index: 999;
+
+}
+.header .headerBox{
+    width: 100%;
+    height: 74px;
+    opacity:1;
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.header .logo{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 290px;
+    height: 46px;
+    background: url("../images/logo.png") top/100%;
+
+}
+.header .menu{
+    margin: 0 0 0 110px;
+    text-align: center;
+}
+.header .hotline{
+    top: 36px;
+    right: 55px;
+    position: fixed;
+
+}
+.header .hotline s{
+    top: -5px;
+    right: 120px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background:url("../images/icons.png") no-repeat 0 -30px;
+}
+.header .hotline span{
+    color: #00dfb9;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu .list-inline{
+    margin-left: -5px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 690px;
+    float: right;
+    margin-right: 188px;
+}
+.menu .list-inline li{
+    float: left;
+    padding: 37px 30px 0 8px;
+}
+.header .line{
+    width: 58px;
+    height: 3px;
+    display: inline-block;
+    background-color: #00dfb9;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.menu .list-inline a{
+    font-size: 20px;
+    font-family: "microsoft yahei";
+    display: inline-block;
+    color: #fff;
+}
+
+.menu .list-inline a:hover{
+    color: #00dfb9;
+}
+/*header end*/
+/*轮播图部分start */
+.mobileCon{
+    padding-top: 74px;
+    width: 100%;
+    height: 595px;
+    font-family: "microsoft yahei";
+}
+.mobileConli{
+    width: 1420px;
+    /*border: 1px solid red;*/
+}
+.mobileCon .img img{
+    width: 160px;
+    position: absolute;
+    bottom: 10px;
+    right: 34px;
+}
+.mobileCon .info{
+    padding-top: 20px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 180px;
+    color: #FFF;
+    display: block;
+}
+.mobileCon .info a{
+    display: none;
+}
+.mobileCon .info .more{
+    width: 125px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: block;
+}
+.mobileCon .info .more:hover{
+    color: #fff;
+    background-color: #09ab8e;
+    border-color: #fff;
+}
+.mobileCon .info h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    display: block;
+}
+.mobileCon .info h6{
+    font-size: 14px;
+    /*font-size: 24px;*/
+    line-height: 32px;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+.mobileCon .info p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+
+.website,.webapp,.respons,.self{
+    height: 595px;
+    width: 205px;
+    position: relative;
+
+}
+/*.website .current,.webapp .current,.respons .current,.self .current{*/
+/*width: 734px;*/
+/*}*/
+
+.current{
+    width: 751px;
+}
+.website{
+    background-color: #4da0c7;
+    float: left;
+
+}
+.webapp{
+    background-color: #80b24f;
+    float: left;
+
+}
+.respons{
+    background-color: #09ab8e;
+    float: left;
+}
+.self{
+    background-color: #a15c90;
+    float: left;
+}
+/*轮播图部分end*/
+/*banner部分start*/
+.banner{
+    width: 1202px;
+    height: 227px;
+    margin: 0px auto;
+    margin-top: 10px;
+    background: url(../images/banner2.jpg) top no-repeat;
+    position: relative;
+}
+.banner .banner-close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(200,200,200,0.4);
+    right: 0;
+    font-family: Arial;
+}
+.banner .banner-close:hover{
+    cursor: pointer;
+}
+/*banner部分end*/
+/*导航栏start*/
+.hottag{
+    margin: 0px auto;
+    width: 1202px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #333;
+    padding-top: 30px;
+    background-color:  rgb(246, 246, 246);
+}
+.taghead{
+    height:51px;
+    text-align: center;
+    color:#111;
+    font: 18px/51px "Microsoft YaHei";
+    background: #fff;
+}
+.alltag{
+    padding: 30px 0px 10px 0;
+    background: rgb(240, 240, 240) url(../images/casebg.gif) repeat scroll left top;
+    /*background-color: #eee;*/
+    line-height: 26px;
+    font-size: 14px;
+    color: #333;
+    overflow:hidden;
+}
+.alltag ul{
+    margin-left: -1px;
+}
+.alltag ul li a{
+    text-align: center;
+    height: 15px;
+    width: 119px;
+    line-height: 15px;
+    float: left;
+    border-left: 1px solid #ddd;
+    margin-bottom: 18px;
+    color:#999;
+
+
+}
+.alltag ul li.spec a{
+    color:red;
+
+}
+.alltag ul li a:hover{
+    color:red;
+}
+
+/*导航栏end*/
+/*waterfull start*/
+#container {
+    width: 1218px;
+    margin: 10px auto;
+    /*background-color: rgb(234, 234, 234);*/
+    /*padding-left: 7px;*/
+}
+
+.box {
+    float: left;
+    border: 1px solid rgb(234, 234, 234);
+    padding: 6px;
+    margin: 0 4px 5px 8px;
+}
+
+.al-left-con p {
+    margin-top: 10px;
+    color: #666;
+    font: 12px microsoft yahei;
+    line-height: 18px;
+    padding-left: 20px;
+}
+
+.al-left-con .al-p-con {
+    font: 700 16px microsoft yahei;
+    color: red;
+}
+
+.al-left-con .al-left-a {
+    /*width: 340px;*/
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.al-left-con .al-left-at {
+    width: 278px;
+    height: 100px;
+    position: absolute;
+    display: none;
+    left: 5px;
+    bottom: 0;
+    background-color: #2FD0B5;
+}
+
+.al-left-con .al-left-at p {
+    color: #fff;
+}
+/*waterfull end*/
+/*小火箭部分start*/
+
+/*.actGotop a {*/
+    /*color: #FFF;*/
+/*}*/
+
+.actGotop {
+    position: fixed;
+    top: 450px;
+    right: 12px;
+    display: none;
+    z-index: 100;
+    text-align: center;
+}
+
+.actGotop a, .actGotop a:link {
+    width: 46px;
+    height: 53px;
+    display: inline-block;
+    background: url(../images/top_01.jpg) no-repeat;
+    outline: none;
+}
+
+.actGotop a:hover {
+    background: url(../images/top_02.gif) no-repeat;
+    outline: none;
+}
+/*小火箭部分end*/

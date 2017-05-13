@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(function () {
+            $("#dowebok").fullpage({
+
+                afterLoad: function (anchorLink, index) {
+
+                    if (index == 7) {
+                        $("#aboutRight").animate({
+                            "top": "200px",
+                            "width": "480px",
+                            "left": "50%",
+                            "opacity": "1"
+                        }, 1000);
+                    }
+                    if (index == 8) {
+                        $(".lx-above").slideDown(1000);
+                        $(".lx-below").slideDown(1000);
+                    }
+                },
+
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+//                menu: '#movemenu1'
+                'navigation': true
+            });
+        });
+    </script>
+    <style>
+        #movemenu1 {
+            width: 20px;
+            position: absolute;
+            right: 0;
+            top:50%;
+            margin-top: -50px;
+            z-index: 12000;
+            margin-right: 20px;
+        }
+
+        #movemenu1 li {
+            border-radius: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: #0ac2d2;
+            margin-top: 10px;
+            opacity: 0.5;
+        }
+        #movemenu1 li:hover{
+            background-color: #0ac2d2;
+        }
+    </style>
+</head>
+<body>
+<!--<ul id="movemenu1">-->
+    <!--<li data-menuanchor="page1" class="active"><a href="#page1"></a></li>-->
+    <!--<li data-menuanchor="page2"><a href="#page2"></a></li>-->
+    <!--<li data-menuanchor="page3"><a href="#page3"></a></li>-->
+    <!--<li data-menuanchor="page4"><a href="#page4"></a></li>-->
+    <!--<li data-menuanchor="page5"><a href="#page5"></a></li>-->
+    <!--<li data-menuanchor="page6"><a href="#page6"></a></li>-->
+    <!--<li data-menuanchor="page7"><a href="#page7"></a></li>-->
+    <!--<li data-menuanchor="page8"><a href="#page8"></a></li>-->
+<!--</ul>-->
+<div class="header">
+    <div class="headerBox"></div>
+    <div class="logo"></div>
+    <i class="line" id="line"></i>
+
+    <div class="menu" id="menu">
+        <ul class="list-inline">
+            <li><a href="..\首页\index.html">首页</a></li>
+            <li><a href="..\业务\yewu.html" target="_blank">业务</a></li>
+            <li><a href="..\案例\case.html" target="_blank">案例</a></li>
+            <li><a href="#">客户</a></li>
+            <li><a href="#">品质</a></li>
+            <li><a href="#">增值</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="..\联系\contactUs.html" target="_blank">联系</a></li>
+        </ul>
+    </div>
+    <div class="hotline">
+        <a href="tel:4006123011" title="网站建设免费咨询热线"><s></s><span>4006-123-011</span></a>
+    </div>
+</div>
+<div id="dowebok">
+    <div class="section video">
+        <div class="videoBox">
+            <div class="index-swiper" id="index-swiper">
+                <div class="swiper-wrapper-s1">
+                    <div class="box">
+                        <div class="left"></div>
+                        <div class="right">
+                            <span>年专注，网站建设</span>
+                            <i></i>
+
+                            <p>始于 2008 - 2016 展望未来<br/>专注于设计体验，专业于解决方案</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-wrapper-s2">
+                    <div class="box">
+                        <span>设计控，也醉了</span>
+                        <i></i>
+
+                        <p>不是非要高大上，只是醉心于设计<br/>我们想，再上一个好案例</p>
+                    </div>
+                </div>
+                <div class="swiper-wrapper-s3">
+                    <div class="box">
+                        <span>技术派，论研发</span>
+                        <i class="mid"></i>
+
+                        <p>我说，业界没有最好的技术，只有最棒的技术开发者<br/>定制研发，为您的客户和团队</p>
+                    </div>
+
+                </div>
+                <div class="swiper-wrapper-s4">
+                    <div class="box">
+                        <div><span>先入为主，布局未来</span><i></i></div>
+                        <p class="bottom">全面布局<u>PC</u>端与<u>移动</u>端<br/>抢占头等商机<br/>基于<u>Html5</u>响应式布局，智能识别多种终端设备</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="innerBox">
+                <div class="news">
+                    <span>NEWS :</span>
+                    <a href="#" title="更多文章动态" class="more" target="_blank">more</a>
+
+                    <div class="tempNews" id="tempNews">
+                        <ul>
+                            <li><a href="#" target="_blank" title="钱都砸去哪里了，为什么我的网站推广没有效果？">钱都砸去哪里了，为什么我的网站推广没 ...</a>
+                            </li>
+                            <li><a href="#" target="_blank" title="你们关注里约奥运会，我们关注奥运会官方网站">你们关注里约奥运会，我们关注奥运会官 ...</a>
+                            </li>
+                            <li><a href="#" target="_blank" title="百度加入信誉度的竞价排名新机制，质量度排名算法或将成为历史">百度加入信誉度的竞价排名新机制，质量
+                                ...</a>
+                            </li>
+                            <li><a href="#" target="_blank" title="如何利用色彩心理学来提高网站转化率（三）">如何利用色彩心理学来提高网站转化率（ ...</a></li>
+                            <li><a href="#" target="_blank" title="国家网信办发布《移动互联网应用程序信息服务管理规定》">国家网信办发布《移动互联网应用程序信
+                                ...</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="guide" id="guide">
+                    <a class="current"></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--业务部分开始-->
+    <div class="section business">
+        <div class="caption">
+            <span>我们能做什么</span>
+
+            <div class="clear"></div>
+        </div>
+        <ul class="items">
+            <li class="pc">
+                <u class="cl"></u>
+                <u class="cr"></u>
+                <i></i><strong>高端定制网站</strong>
+
+                <p class="cover">企业高端定制网站设计<br/>彰显品牌形象</p>
+            </li>
+            <li class="mobi">
+                <u class="cl"></u>
+                <u class="cr"></u>
+                <i></i><strong>移动网站建设</strong>
+
+                <p class="cover">定制手机网站 / 微网站制作<br/>布局移动互联网</p>
+            </li>
+            <li class="sys">
+                <u class="cl"></u>
+                <u class="cr"></u>
+                <i></i><strong>业务系统研发</strong>
+
+                <p class="cover">基于 B/S 架构的系统研发<br/>让业务办公轻松自如</p>
+            </li>
+            <li class="app">
+                <u class="cl"></u>
+                <u class="cr"></u>
+                <i></i><strong>APP应用程序</strong>
+
+                <p class="cover">基于 iOS / Android 应用开发<br/>掌控智能终端时代</p>
+            </li>
+            <li class="host">
+                <u class="cl"></u>
+                <u class="cr"></u>
+                <i></i><strong>服务器运维</strong>
+
+                <p class="cover">我们不只提供云硬件和网络<br/>更加注重技术运维</p>
+            </li>
+
+        </ul>
+        <label></label>
+
+    </div>
+    <!--业务部分结束-->
+
+    <!--案例部分开始-->
+    <div class="section al">
+        <div class="al-title">案例欣赏</div>
+        <div class="al-content" id="al-content">
+        </div>
+        <div class="al-more"><a href="#" class="more-con">MORE</a></div>
+    </div>
+    <!--案例部分结束-->
+
+    <!--客户部分开始-->
+    <section class="section cooperation">
+        <div class="co-box">
+            <div class="co-caption">
+                <i class=""></i>
+
+                <p>他们与千助长期合作</p>
+            </div>
+            <div class="co-items clearfix">
+                <ul id="co-items"></ul>
+            </div>
+        </div>
+    </section>
+    <!--客户部分结束-->
+
+    <!--品质部分开始-->
+    <div id="pz-top" class="section pz-top">
+        <!--<img src="images/pz-fdj.png" class="pz-img" id="pz-img"/>-->
+        <div class="pz-title">
+            <i></i>
+
+            <P>不同媒介，同样精彩</P>
+        </div>
+        <div class="pz-content clearfix">
+            <div class="pz-device">
+                <ul class="pz-ul1">
+                    <li class="pz-icon1"></li>
+                    <li class="pz-icon2"></li>
+                    <li class="pz-icon3"></li>
+                </ul>
+                <p>触及视觉灵魂的设计趋势</p>
+
+                <p>精心布局的用户体验</p>
+
+                <p>毫无顾忌地通过任何终端</p>
+
+                <p>呈现在客户眼前</p>
+            </div>
+            <div class="pz-browser">
+                <ul>
+                    <li class="pz-icon4"></li>
+                    <li class="pz-icon5"></li>
+                    <li class="pz-icon6"></li>
+                    <li class="pz-icon7"></li>
+                </ul>
+                <p>Html5+css3响应式布局</p>
+
+                <p>卓越的浏览器兼容性</p>
+
+                <p>因为高端，所以出众</p>
+            </div>
+            <div class="pz-system">
+                <ul class="pz-ul2">
+                    <li class="pz-icon8"></li>
+                    <li class="pz-icon9"></li>
+                    <li class="pz-icon10"></li>
+                    <li class="pz-icon11"></li>
+                </ul>
+                <p>基于B/S架构的网站建设</p>
+
+                <p>无障碍的跨平台应用</p>
+
+                <p>无需用户下载安装</p>
+
+                <p>云端管理，轻松维护</p>
+            </div>
+        </div>
+        <a class="pz-more" href="#">你以为看到了网站的全部?</a>
+    </div>
+    <!--品质部分结束-->
+
+    <!--增值部分开始-->
+    <div class="section zz">
+        <div class="zz-mt ac">
+            整合营销，抢占商机
+        </div>
+        <div class="zz-mc">
+            <ul class="items">
+                <li class="se ac">
+                    <u></u>
+                    <i></i>
+                    <strong>搜索引擎</strong>
+
+                    <p>SEO 优化<br/>搜索引擎竞价</p>
+                </li>
+                <li class="weixin ac">
+                    <u></u>
+                    <i></i>
+                    <strong>微信营销</strong>
+
+                    <p>公众账号 / 微网站<br/>微盟 ( 微社区 )</p>
+                </li>
+                <li class="weibo ac">
+                    <u></u>
+                    <i></i>
+                    <strong>微博营销</strong>
+
+                    <p>企业蓝V认证<br/>官方微博接入网站</p>
+                </li>
+                <li class="sms ac">
+                    <u></u>
+                    <i></i>
+                    <strong>消息推送</strong>
+
+                    <p>短信平台接口<br/>Email 推送</p>
+                </li>
+                <li class="pay ac">
+                    <u></u>
+                    <i></i>
+                    <strong>在线支付</strong>
+
+                    <p>支付宝、银联<br/>Paypal 接口</p>
+                </li>
+                <li class="bbs ac">
+                    <u></u>
+                    <i></i>
+                    <strong>论坛聚人</strong>
+
+                    <p>独立开发<br/>会员打通</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--增值部分结束-->
+    <!--关于部分开始-->
+    <div class="section aboutus" id="about">
+        <!--左边菜单栏-->
+        <ul class="menu" id="aboutLeft">
+            <li class="one">思想</li>
+            <li>关于</li>
+            <li>荣誉</li>
+        </ul>
+        <!--右边轮播-->
+        <div class="items" id="aboutRight">
+            <ul style="width: 1920px; height: 440px; position: absolute; overflow: hidden;">
+                <li class="swiper-slide nth1" style="width: 480px; height: 240px;">
+                    <strong>厚积薄发</strong>
+
+                    <p>登上峰顶，不是为了饱览风光，是为了寻找更高的山峰<br>日出东方，告别了昨天的荣耀，将光芒照向更远的地方<br>一路上，我们更在意如何积累和沉淀</p>
+                    <u>下一秒，让你看，我们到底有多强</u>
+                </li>
+                <li class="swiper-slide nth2" style="width: 480px; height: 240px;">
+                    <strong>千助科技</strong>
+
+                    <p>
+                        成立于2008年，坐落于北京中关村科技园区，是中国优秀的互联网服务提供商。自成立以来，专注于高端网站建设、移动互联应用、B/S架构系统研发、云服务器部署和运维，为企业客户的互联网应用提供一站式服务。</p>
+
+                    <p>我们始终坚持以客户需求为导向，为追求用户体验设计，提供有针对性的项目解决方案，千助人将不断地超越自我，挑战险峰！</p>
+                </li>
+                <li class="swiper-slide nth3" style="width: 480px; height: 240px;">
+                    <strong>放下荣誉，放眼未来</strong>
+                    <ul>
+                        <li>2009年<u>-</u>荣获海淀区创新企业</li>
+                        <li>2010年<u>-</u>设计联盟评选为金牌设计企业</li>
+                        <li>2010年<u>-</u>荣获中关村高新技术企业</li>
+                        <li>2011年<u>-</u>成功注册 " 千助 " 商标，树立品牌</li>
+                        <li>2013年<u>-</u>已拥有自主知识产权，国家软件著作权达12项之多</li>
+                    </ul>
+                </li>
+                <li class="swiper-slide nth1" style="width: 480px; height: 240px;">
+                    <strong>厚积薄发</strong>
+
+                    <p>登上峰顶，不是为了饱览风光，是为了寻找更高的山峰<br>日出东方，告别了昨天的荣耀，将光芒照向更远的地方<br>一路上，我们更在意如何积累和沉淀</p>
+                    <u>下一秒，让你看，我们到底有多强</u>
+                </li>
+            </ul>
+        </div>
+        <!--下方信息列表-->
+        <table class="exp" id="aboutBottom">
+            <tbody>
+            <tr>
+                <td><u>611</u>位企业客户信赖之选</td>
+                <td><u>267</u>上市/集团企业设计作品</td>
+                <td><u>2010</u>年度金牌设计企业</td>
+                <td><u>12</u>项国家软件著作权</td>
+                <td><u>96%</u>以上的客户续费率</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="expBg"></div>
+        <div class="shade"></div>
+    </div>
+    <!--关于部分结束-->
+
+    <!--联系部分开始-->
+    <div class="section lx-contact">
+        <div class="lx-box">
+            <div class="lx-above">
+                <div class="lx-left">
+                    <img src="images/wechat_code.jpg" alt=""/>
+                </div>
+                <div class="lx-center">
+                    <i></i>
+
+                    <p>中国
+                        <u>·</u>北京<u></u>中关村科技园<br>
+                        联系电话：010-58859097<u>/</u>58851650<br>
+                        地址：海淀区上地东路盈创动力E座905<br>
+                        邮编：100085
+                        <a href="#" class="job">[ 工作机会 ]
+                        </a>
+                    </p>
+                </div>
+                <div class="lx-right">
+                    Email：Service@1000zhu.com<br>
+                    中文域名：千助.中国<u>/</u>千助.com<br>
+                    Copyright 2008-2015<u></u>千助科技 版权所有<br>
+                    京ICP备 08102474 号<br>
+                    京公网安备 11010802010984 号
+
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="lx-below">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <!--联系部分结束-->
+</div>
+
+
+<script src="js/indexjs.js"></script>
+<script src="js/zy_index.js"></script>
+<script src="js/sxt_index.js"></script>
+<script src="js/cooperation.js"></script>
+<script src="js/wjy_quality.js"></script>
+<script src="js/zygy.js"></script>
+<script src="js/dxy_index.js"></script>
+<script src="js/jquery.color.js"></script>
+<script src="js/xr_index.js"></script>
+
+<!--张扬首页部分js开始-->
+<script>
+    $(function () {
+        var json = [
+            {src: "images/al-con1.jpg", title: "网站设计", name: "海尔嫩烤箱官方网站建设", style: "上市公司，官方网站，欧美风格"},
+            {src: "images/al-con2.jpg", title: "网站设计", name: "探路者H5网站建设项目", style: "上市公司 , 电子商务网站建设 , 红色 , 欧美风格"},
+            {src: "images/al-con3.jpg", title: "网站设计", name: "中远国际航空网站设计", style: "国有企业 , 蓝色 , 欧美风格 , 上市公司"}
+        ];
+        var str = "";
+        for (var i = 0; i < json.length; i++) {
+            str += '<div class="al-left al-r">'
+                    + '<div class="al-image-effect-future">'
+                    + '<div class="al-share-layer">'
+                    + '<a href="#" class="al-share-button al-share-via">进入</a>'
+                    + '</div>'
+                    + '<div class="al-image-layer"><img src="' + json[i].src + '">'
+                    + '</div>'
+                    + '</div>'
+                    + '<div class="al-left-con">'
+                    + '<a href="javascript:;" class="al-left-a">'
+                    + '<p>' + json[i].title + '</p>'
+                    + '<p class="al-p-con">' + json[i].name + '</p>'
+                    + '<p>' + json[i].style + '</p>'
+                    + '</a>'
+                    + '<a href="javascript:;" class="al-left-at">'
+                    + '<p>' + json[i].title + '</p>'
+                    + '<p class="al-p-con">' + json[i].name + '</p>'
+                    + '<p>' + json[i].style + '</p>'
+                    + '</a>'
+                    + '</div>' + '</div>';
+        }
+        $(".al-content").html(str);
+        $(".al-left").eq(2).css("marginRight", "0");
+        $(".al-left").mouseenter(function () {
+            $(this).find(".al-left-at").stop().slideDown(200);
+        })
+        $(".al-left").mouseleave(function () {
+            $(this).find(".al-left-at").stop().slideUp(200);
+        })
+    })
+</script>
+<!--张扬首页部分js结束-->
+
+</body>
+</html>
